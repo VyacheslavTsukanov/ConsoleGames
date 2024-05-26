@@ -6,7 +6,9 @@ namespace SharpInnkeepersLegacy
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            // Меню игры
+            Menu menu = new Menu();
+            Menu.menu();
         }
     }
 }
