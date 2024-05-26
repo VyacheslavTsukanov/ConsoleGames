@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\MapArchitecture",
+    "\\MapArchitecture\\MapArchitecture"
   ],
-  "SelectedNode": "\\README.md",
+  "SelectedNode": "\\MapArchitecture\\MapArchitecture\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
