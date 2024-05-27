@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "SharpInnkeepersLegacy/1.0.0": {
+        "runtime": {
+          "SharpInnkeepersLegacy.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SharpInnkeepersLegacy/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

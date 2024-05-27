@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34407.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpInnkeepersLegacy", "SharpInnkeepersLegacy\SharpInnkeepersLegacy.csproj", "{4C62457B-916F-4525-80A5-57D72CB8202E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4C62457B-916F-4525-80A5-57D72CB8202E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C62457B-916F-4525-80A5-57D72CB8202E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C62457B-916F-4525-80A5-57D72CB8202E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C62457B-916F-4525-80A5-57D72CB8202E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {033107B7-A400-475D-944D-5F47AAC5E8B2}
+	EndGlobalSection
+EndGlobal
