@@ -6,7 +6,7 @@ namespace MapArchitecture
     {
         static void Main(string[] args)
         {
-            MapGame gameMap = new MapGame(10, 10);
+            MapGame gameMap = new MapGame(20, 30);
             gameMap.InitializeMap();
 
             while (true)
