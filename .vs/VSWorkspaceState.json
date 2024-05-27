@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\SharpPredator",
+    "\\SharpPredator\\SharpPredator"
   ],
+  "SelectedNode": "\\SharpPredator\\SharpPredator\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
