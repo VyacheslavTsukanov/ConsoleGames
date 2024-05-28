@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
     "",
+    "\\SharpAnOldRelic",
+    "\\SharpAnOldRelic\\SharpAnOldRelic",
     "\\SharpPredator\\SharpPredator"
   ],
+  "SelectedNode": "\\SharpAnOldRelic\\SharpAnOldRelic.sln",
   "PreviewInSolutionExplorer": false
 }

@@ -4,40 +4,30 @@ namespace SharpPredator
 {
     class Program
     {
-        public static void Preface()
-        {
-            Console.WriteLine("Нет конца и края для ваших фонтазий!");
-        }
+        static int roomNumber = 0;
 
         static void Main(string[] args)
         {
             Game game = new Game();
 
-            Preface();
+            Introduction();
             Console.ReadLine();
 
             while (true)
             {
                 Console.Clear();
-               
 
-                Console.WriteLine("1. Используйте стрелки для перемещения по карте или нажмите 'Q' для выхода:");
-                //Console.WriteLine("2. Посмотреть статы");
-                //Console.WriteLine("2. Посмотреть карты");
+                Console.WriteLine("1. Мы попадаем в статусы:");
+                Console.WriteLine("2. Мы попадаем в карты:");
+                Console.WriteLine("3. Мы попадаем в магазин:");
+                Console.WriteLine("Используйте стрелки для перемещения по карте или нажмите 'Q' для выхода:");
 
+                if (roomNumber == 1) game.DisplayStats();
+                if (roomNumber == 2) game.DisplayMap();
+                if (roomNumber == 3) game.EnterShop();
 
                 Console.Clear();
-
-                game.DisplayStats();
-                Console.ReadLine();
-
-                game.DisplayMap();
-                Console.ReadLine();
-
-                game.EnterShop();
-                Console.ReadLine();
-
-                Console.WriteLine("Используйте стрелки для перемещения по карте или нажмите 'Q' для выхода:");
+               
 
                 var key = Console.ReadKey().Key;
 
@@ -75,5 +65,27 @@ namespace SharpPredator
             Console.WriteLine("Спасибо за игру!");
 
         }
+
+        public static void Introduction()
+        {
+            Console.WriteLine("Нет конца и края для ваших фантазий!");
+        }
+
+        public static int getIntInRange(int optionsNumber)
+            {
+                string input = Console.ReadLine();
+                int number = -1;
+                bool isConverted = int.TryParse(input, out number);
+                bool isInRange = number >= 1 && number <= optionsNumber;
+
+                while (!isConverted || !isInRange)
+                {
+                    Console.WriteLine("Неверная опция, попробуй еще раз!");
+                    input = Console.ReadLine();
+                    isConverted = int.TryParse(input, out number);
+                    isInRange = number >= 1 && number <= optionsNumber;
+                }
+                return number;
+            }
     }
 }
