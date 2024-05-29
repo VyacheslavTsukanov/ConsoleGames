@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SharpInnkeepersLegacy.Tavern.Diary;
+using System;
 
 namespace SharpInnkeepersLegacy
 {
@@ -33,7 +34,8 @@ namespace SharpInnkeepersLegacy
             else if (option == 3)
             {
                 Console.WriteLine("Инвентарь персонажа.");
-                Inventory();                                            // Инвентарь персонажа
+                Inventory inventory = new Inventory();                  // Инвентарь персонажа
+                inventory.InventoryDisplay();
                 Console.ReadLine();
                 journal();
                
