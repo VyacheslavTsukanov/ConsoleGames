@@ -4,7 +4,9 @@ namespace SharpPredator
 {
     class Program
     {
-        static int roomNumber = 0;
+        static int roomNumber = 1;
+        static bool hasKey = false;
+        static bool hasModule = false;
 
         static void Main(string[] args)
         {

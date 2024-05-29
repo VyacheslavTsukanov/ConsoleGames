@@ -4,6 +4,7 @@ namespace SharpInnkeepersLegacy
 {
     class Journal
     {
+        static int roomNumber = 1;
         public static void journal() // Журнал - в журнале будут отображаться все задания, Характеристики и Инвентарь
         {
             Console.WriteLine("Вы находитесь в журнале");
@@ -14,45 +15,64 @@ namespace SharpInnkeepersLegacy
             Console.WriteLine("5. Очки лояльности");
             Console.WriteLine("6. Задания");
 
-            Console.Write("Введите число: ");
-            int a = int.Parse(Console.ReadLine());
+            int option = GetIntInRange.getIntInRange(6);
 
-            switch (a)
+            if (option == 1)
             {
-                case 1:
-                    PlaySister.playForYourSister(); // Вернуться назад
-                    break;
-                case 2:
-                    Specifications specifications = new Specifications();   // Характеристика персонажа
-                    specifications.set(100);
-                    specifications.show();
-                    journal(); // Вернуться назад
-                    break;
-                case 3:
-                    Inventory();                    // Инвентарь персонажа
-                    break;
-                case 4:
-                    Money money = new Money();      // Деньги
-                    money.set(150);
-                    money.show();
-                    journal(); // Вернуться назад
-                    break;
-                case 5:
-                    LoyaltyPoints LoyaltyPoints = new LoyaltyPoints();      // Очки лояльности
-                    LoyaltyPoints.set(100);
-                    LoyaltyPoints.show();
-                    journal(); // Вернуться назад
-                    break;
-                case 6:
-                    Tasks();                    // Задания
-                    break;
-
-                default:
-                    Console.WriteLine("Вы ввели некоректное число!");
-                    break;
+                Console.WriteLine("Вы закрываете журнал.");
+                PlaySister.playForYourSister();                         // Вернуться назад
+                roomNumber = 1;
+                Console.ReadLine();
             }
+            else if (option == 2)
+            {
+                Console.WriteLine("Ваши характеристики.");
+                Specifications specifications = new Specifications();   // Характеристика персонажа
+                specifications.set(100);
+                specifications.show();
+                journal();                                              // Вернуться назад
+                roomNumber = 2;
+                Console.ReadLine();
+            }
+            else if (option == 3)
+            {
+                Console.WriteLine("Инвентарь персонажа.");
+                Inventory();                                            // Инвентарь персонажа
+                journal();
 
-            
+                roomNumber = 2;
+                Console.ReadLine();
+            }
+            else if (option == 4)
+            {
+                Console.WriteLine("Деньги персонажа.");
+                Money money = new Money();                              // Деньги
+                money.set(150);
+                money.show();
+                journal();                                              // Вернуться назад
+
+                roomNumber = 4;
+                Console.ReadLine();
+            }
+            else if (option == 5)
+            {
+                Console.WriteLine("Очки лояльности.");
+                LoyaltyPoints LoyaltyPoints = new LoyaltyPoints();      // Очки лояльности
+                LoyaltyPoints.set(100);
+                LoyaltyPoints.show();
+                journal();                                              // Вернуться назад
+
+                roomNumber = 5;
+                Console.ReadLine();
+            }
+            else if (option == 6)
+            {
+                Console.WriteLine("Сдесь вы можите выбрать задания которые вам оставили поситители.");
+                Tasks();                                                // Задания
+
+                roomNumber = 6;
+                Console.ReadLine();
+            }
         }
 
         private static void Inventory()
@@ -61,7 +81,29 @@ namespace SharpInnkeepersLegacy
         }
         private static void Tasks()
         {
-            Console.WriteLine("Задания");
+            Console.WriteLine("1. Вернуться в журнал");
+            Console.WriteLine("2. ");
+            Console.WriteLine("3. ");
+            Console.WriteLine("4. ");
+            Console.WriteLine("5. ");
+
+            int option = GetIntInRange.getIntInRange(5);
+
+            if (option == 1)
+            {
+                Console.WriteLine("Вы закрываете задания и возвращаетесь в журнал.");
+                journal();                                              // Вернуться назад
+                roomNumber = 1;
+                Console.ReadLine();
+            }
+            else if (option == 2)
+            {
+                Console.WriteLine(".");
+                
+                roomNumber = 2;
+                Console.ReadLine();
+            }
+
         }
     }
 }
