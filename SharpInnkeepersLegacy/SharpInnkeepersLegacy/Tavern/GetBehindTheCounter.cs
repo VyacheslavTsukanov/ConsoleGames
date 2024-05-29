@@ -25,7 +25,7 @@ namespace SharpInnkeepersLegacy
             else if (option == 2)
             {
                 Console.WriteLine(".");
-                roomNumber = 3;
+                roomNumber = 2;
                 Console.ReadLine();
             }
             else
