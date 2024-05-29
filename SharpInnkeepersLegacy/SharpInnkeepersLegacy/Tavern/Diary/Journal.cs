@@ -4,7 +4,6 @@ namespace SharpInnkeepersLegacy
 {
     class Journal
     {
-        static int roomNumber = 1;
         public static void journal() // Журнал - в журнале будут отображаться все задания, Характеристики и Инвентарь
         {
             Console.WriteLine("Вы находитесь в журнале");
@@ -21,7 +20,6 @@ namespace SharpInnkeepersLegacy
             {
                 Console.WriteLine("Вы закрываете журнал.");
                 PlaySister.playForYourSister();                         // Вернуться назад
-                roomNumber = 1;
                 Console.ReadLine();
             }
             else if (option == 2)
@@ -31,7 +29,6 @@ namespace SharpInnkeepersLegacy
                 specifications.set(100);
                 specifications.show();
                 journal();                                              // Вернуться назад
-                roomNumber = 2;
                 Console.ReadLine();
             }
             else if (option == 3)
@@ -39,8 +36,6 @@ namespace SharpInnkeepersLegacy
                 Console.WriteLine("Инвентарь персонажа.");
                 Inventory();                                            // Инвентарь персонажа
                 journal();
-
-                roomNumber = 2;
                 Console.ReadLine();
             }
             else if (option == 4)
@@ -50,8 +45,6 @@ namespace SharpInnkeepersLegacy
                 money.set(150);
                 money.show();
                 journal();                                              // Вернуться назад
-
-                roomNumber = 4;
                 Console.ReadLine();
             }
             else if (option == 5)
@@ -61,16 +54,12 @@ namespace SharpInnkeepersLegacy
                 LoyaltyPoints.set(100);
                 LoyaltyPoints.show();
                 journal();                                              // Вернуться назад
-
-                roomNumber = 5;
                 Console.ReadLine();
             }
             else if (option == 6)
             {
                 Console.WriteLine("Сдесь вы можите выбрать задания которые вам оставили поситители.");
                 Tasks();                                                // Задания
-
-                roomNumber = 6;
                 Console.ReadLine();
             }
         }
@@ -93,14 +82,11 @@ namespace SharpInnkeepersLegacy
             {
                 Console.WriteLine("Вы закрываете задания и возвращаетесь в журнал.");
                 journal();                                              // Вернуться назад
-                roomNumber = 1;
                 Console.ReadLine();
             }
             else if (option == 2)
             {
                 Console.WriteLine(".");
-                
-                roomNumber = 2;
                 Console.ReadLine();
             }
 

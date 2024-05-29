@@ -4,7 +4,6 @@ namespace SharpInnkeepersLegacy
 {
     class Menu
     {
-        
         public static void menu() // Начало игры
         {
             
@@ -12,49 +11,19 @@ namespace SharpInnkeepersLegacy
             Console.WriteLine("1. Описание игры!"); // Description of the game
             Console.WriteLine("2. Выбор героя!");   // Choosing a hero
             Console.WriteLine("3. Разработчик!");   // Developer
+            int option = GetIntInRange.getIntInRange(3);
 
-
-
-            Console.Write("Введите число: ");
-            int a = int.Parse(Console.ReadLine());
-
-            switch (a)
-            {
-                case 1:
-                    DescriptionOfTheGame();
-                    break;
-                case 2:
-                    ChoosingHero();
-                    break;
-                case 3:
-                    Developer();
-                    break;
-
-                default:
-                    Console.WriteLine("Вы ввели некоректное число!");
-                    menu();
-                    break;
-            }
+            if (option == 1) DescriptionOfTheGame();// Описание игры
+            else if (option == 2) ChoosingHero();   // Выбор героя
+            else Developer();                       // Разработчик
         }
 
         public static void DescriptionOfTheGame() // Описание игры
         {
             introduction();
 
-            Console.Write("Введите число: ");
-            int a = int.Parse(Console.ReadLine());
-            
-            switch (a)
-            {
-                case 1:
-                    menu(); // Вернуться в меню
-                    break;
-
-                default:
-                    Console.WriteLine("Вы ввели некоректное число!");
-                    DescriptionOfTheGame();
-                    break;
-            }
+            int option = GetIntInRange.getIntInRange(1);
+            if (option == 1) menu(); // Вернуться в меню
         }
 
         public static void introduction()
@@ -72,32 +41,21 @@ namespace SharpInnkeepersLegacy
             Console.WriteLine("Каждый герой имеет свой уровень развития");
             Console.WriteLine("1. Вернуться в меню");
             Console.WriteLine("2. Сестра - легкий уровень (вам сразу доступна таверна)");
-            // Console.WriteLine("2. Младший брат - средний уровень (вы можите продать таверну и купить ");
-            // Console.WriteLine("3. Старший брат - высокий уровень (вы вынужены продать таверну и на вырученные деньги купить ");
+            // Console.WriteLine("3. Младший брат - средний уровень (вы можите продать таверну и купить ");
+            // Console.WriteLine("4. Старший брат - высокий уровень (вы вынужены продать таверну и на вырученные деньги купить ");
 
-            Console.Write("Введите число: ");
-            int a = int.Parse(Console.ReadLine());
+            int option = GetIntInRange.getIntInRange(2);
 
-            switch (a)
+            if (option == 1)
             {
-                case 1:
-                    menu(); // Вернуться в меню
-                    break;
-
-                case 2:
-                    Loading.loading(); // Загрузка игры
-                    PlaySister.playForYourSister(); // Играем за сестру
-                    break;
-
-                default:
-                    Console.WriteLine("Вы ввели некоректное число!");
-                    ChoosingHero();
-                    break;
+                menu(); // Вернуться в меню
             }
-
+            else if (option == 2)
+            {
+                Loading.loading(); // Загрузка игры
+                PlaySister.playForYourSister(); // Играем за сестру
+            }
         }
-
-       
 
         public static void Developer() // Разработчик
         {
@@ -105,20 +63,8 @@ namespace SharpInnkeepersLegacy
             Console.WriteLine("Vyacheslav Tsukanov");
             Console.WriteLine("1. Вернуться в меню");
 
-            Console.Write("Введите число: ");
-            int a = int.Parse(Console.ReadLine());
-
-            switch (a)
-            {
-                case 1:
-                    menu(); // Вернуться в меню
-                    break;
-               
-                default:
-                    Console.WriteLine("Вы ввели некоректное число!");
-                    Developer();
-                    break;
-            }
+            int option = GetIntInRange.getIntInRange(1);
+            if (option == 1) menu(); // Вернуться в меню
         }
     }
 }

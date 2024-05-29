@@ -4,7 +4,6 @@ namespace SharpInnkeepersLegacy
 {
     class PlaySister
     {
-        static int roomNumber = 1;
         public static void playForYourSister() // Начало игры
         {
             // Playing for the bartender's sister
@@ -26,7 +25,6 @@ namespace SharpInnkeepersLegacy
                 //Journal journal = new Journal();
                 Journal.journal();                  // Журнал - в журнале будут отображаться все задания, Характеристики, Инвентарь, деньги, Очки лояльности
        
-                roomNumber = 1;
                 Console.ReadLine();
             }
             else if (option == 2)
@@ -34,7 +32,6 @@ namespace SharpInnkeepersLegacy
                 Console.WriteLine("Что будем изменять, добавлять.");
                 //TavernRenovation tavernRenovation = new TavernRenovation(); 
                 TavernRenovation.tavernRenovation();                                        // Ремонт таверны
-                roomNumber = 2;
                 Console.ReadLine();
             }
             else
