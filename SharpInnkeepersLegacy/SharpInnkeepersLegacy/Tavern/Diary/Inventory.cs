@@ -19,7 +19,6 @@ namespace SharpInnkeepersLegacy.Tavern.Diary
 
         public void InventoryDisplay()
         {
-            Console.WriteLine("Инвентарь:");
             foreach (var item in player.Inventory)
             {
                 Console.WriteLine("- " + item);

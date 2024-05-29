@@ -34,8 +34,8 @@ namespace SharpInnkeepersLegacy
             else if (option == 3)
             {
                 Console.WriteLine("Инвентарь персонажа.");
-                Inventory inventory = new Inventory();                  // Инвентарь персонажа
-                inventory.InventoryDisplay();
+                //Inventory inventory = new Inventory();                  // Инвентарь персонажа
+                //inventory.InventoryDisplay();
                 Console.ReadLine();
                 journal();
                
