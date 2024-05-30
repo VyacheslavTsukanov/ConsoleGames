@@ -35,7 +35,7 @@ namespace SharpInnkeepersLegacy
             }
             else if (option == 3)
             {
-                s();
+                GuesTheRiddle();
             }
             else if (option == 4)
             {
@@ -47,7 +47,7 @@ namespace SharpInnkeepersLegacy
             }
         }
 
-        public static void s()
+        public static void GuesTheRiddle()
         {
             
             string[] names = { "Мерлин", "Эльф", "Ведьма", "Король", "Пират" };
