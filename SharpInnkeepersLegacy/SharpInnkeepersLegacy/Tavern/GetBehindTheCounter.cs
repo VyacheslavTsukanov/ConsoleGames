@@ -35,7 +35,7 @@ namespace SharpInnkeepersLegacy
             }
             else if (option == 3)
             {
-                RandomNPC.GiveQuest();
+                s();
             }
             else if (option == 4)
             {
@@ -44,6 +44,40 @@ namespace SharpInnkeepersLegacy
                 
                 Console.ReadLine();
                 GetBehindTheCounter.getBehindTheCounter();
+            }
+        }
+
+        public static void s()
+        {
+            
+            string[] names = { "Мерлин", "Эльф", "Ведьма", "Король", "Пират" };
+            string[] riddles = {
+            "Что такое, если убрать всю воду, и останется только земля?",
+            "Что можно увидеть с закрытыми глазами?",
+            "Что летает без крыльев?",
+            "Что можно сломать, даже если не касаться?",
+            "Что имеет глаза, но не видит?"
+            };
+            string[] answers = {
+                "суша", "сон", "время", "обещание", "игла"
+            };
+            string[] drawings = {
+                "чертеж кухни", "чертеж мебели", "чертеж грили", "чертеж барной стойки", "чертеж 5"
+            };
+
+            RandomNPC[] npcs = new RandomNPC[names.Length];
+
+            for (int i = 0; i < npcs.Length; i++)
+            {
+                npcs[i] = new RandomNPC(names[i], riddles[i], answers[i], drawings[i]);
+            }
+
+            while (true)
+            {
+                Random random = new Random();
+                int randomIndex = random.Next(npcs.Length);
+
+                npcs[randomIndex].GiveQuest();
             }
         }
 

@@ -13,4 +13,3 @@ C:\Users\vtsuk\OneDrive\Рабочий стол\Proj - C#\ConsoleGames\SharpInnk
 C:\Users\vtsuk\OneDrive\Рабочий стол\Proj - C#\ConsoleGames\SharpInnkeepersLegacy\SharpInnkeepersLegacy\obj\Debug\net5.0\ref\SharpInnkeepersLegacy.dll
 C:\Users\vtsuk\OneDrive\Рабочий стол\Proj - C#\ConsoleGames\SharpInnkeepersLegacy\SharpInnkeepersLegacy\obj\Debug\net5.0\SharpInnkeepersLegacy.pdb
 C:\Users\vtsuk\OneDrive\Рабочий стол\Proj - C#\ConsoleGames\SharpInnkeepersLegacy\SharpInnkeepersLegacy\obj\Debug\net5.0\SharpInnkeepersLegacy.genruntimeconfig.cache
-C:\Users\vtsuk\OneDrive\Рабочий стол\Proj - C#\ConsoleGames\SharpInnkeepersLegacy\SharpInnkeepersLegacy\obj\Debug\net5.0\SharpInnkeepersLegacy.csproj.AssemblyReference.cache

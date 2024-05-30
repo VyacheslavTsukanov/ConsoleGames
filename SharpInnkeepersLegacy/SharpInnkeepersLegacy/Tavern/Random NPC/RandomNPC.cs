@@ -2,27 +2,34 @@
 
 namespace SharpInnkeepersLegacy.Random_NPC
 {
-    class RandomNPC
+    public class RandomNPC
     {
-        static bool drawing = false;
+        public string Name { get; set; }
+        public string Riddle { get; set; }
+        public string Answer { get; set; }
+        public string Drawing { get; set; }
 
-        public static void GiveQuest()
+        public RandomNPC(string name, string riddle, string answer, string drawing)
         {
-            Console.WriteLine("NPC: Разгадай загадку");
-            Console.WriteLine("NPC: Висит груша, нельзя скушать");
+            Name = name;
+            Riddle = riddle;
+            Answer = answer;
+            Drawing = drawing;
+        }
+
+        public void GiveQuest()
+        {
+            Console.WriteLine($"NPC {Name}: Разгадай загадку");
+            Console.WriteLine($"NPC {Name}: {Riddle}");
 
             string response = Console.ReadLine();
 
-            if (response.ToLower() == "лампочка")
+            if (response.ToLower() == Answer.ToLower())
             {
-                if (!drawing)
-                {
-                    Console.WriteLine("Ура я отгадал!");
-                    drawing = true;
-                    Console.WriteLine("Поздравляем! Вы получили чертеж.");
-                    GetBehindTheCounter.NPCInventorOption();
-                    Console.ReadLine();
-                }
+                Console.WriteLine("Ура я отгадал!");
+                Console.WriteLine($"Поздравляем! Вы получили {Drawing}.");
+                GetBehindTheCounter.NPCInventorOption();
+                Console.ReadLine();
             }
             else
             {
