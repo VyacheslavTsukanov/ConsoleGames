@@ -2,9 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\SharpInnkeepersLegacy",
-    "\\SharpPredator",
+    "\\SharpInnkeepersLegacy\\SharpInnkeepersLegacy",
     "\\SharpPredator\\SharpPredator"
   ],
-  "SelectedNode": "\\SharpPredator\\SharpPredator\\Program.cs",
+  "SelectedNode": "\\SharpInnkeepersLegacy\\SharpInnkeepersLegacy\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

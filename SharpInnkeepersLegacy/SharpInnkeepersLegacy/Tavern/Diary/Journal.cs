@@ -34,8 +34,9 @@ namespace SharpInnkeepersLegacy
             else if (option == 3)
             {
                 Console.WriteLine("Инвентарь персонажа.");
-                //Inventory inventory = new Inventory();                  // Инвентарь персонажа
-                //inventory.InventoryDisplay();
+                Inventory inventory = new Inventory();                  // Инвентарь персонажа
+                inventory.DisplayInventory();
+
                 Console.ReadLine();
                 journal();
                
@@ -57,10 +58,7 @@ namespace SharpInnkeepersLegacy
             }
         }
 
-        private static void Inventory()
-        {
-            Console.WriteLine("Инвентарь персонажа");
-        }
+       
         private static void Tasks()
         {
             Console.WriteLine("1. Вернуться в журнал");
