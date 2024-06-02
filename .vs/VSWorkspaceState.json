@@ -1,9 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\SharpPredator",
-    "\\SharpPredator\\SharpPredator"
+    "\\SharpInnkeepersLegacy",
+    "\\SharpInnkeepersLegacy\\SharpInnkeepersLegacy",
+    "\\SharpInnkeepersLegacy\\SharpInnkeepersLegacy\\Tavern",
+    "\\SharpInnkeepersLegacy\\SharpInnkeepersLegacy\\Tavern\\Diary"
   ],
-  "SelectedNode": "\\SharpPredator\\SharpPredator.sln",
   "PreviewInSolutionExplorer": false
 }
