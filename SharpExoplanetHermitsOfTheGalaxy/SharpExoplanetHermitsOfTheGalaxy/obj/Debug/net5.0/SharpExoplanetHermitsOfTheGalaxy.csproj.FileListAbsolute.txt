@@ -13,3 +13,4 @@ C:\Users\vtsuk\OneDrive\Рабочий стол\Proj - C#\ConsoleGames\SharpExop
 C:\Users\vtsuk\OneDrive\Рабочий стол\Proj - C#\ConsoleGames\SharpExoplanetHermitsOfTheGalaxy\SharpExoplanetHermitsOfTheGalaxy\obj\Debug\net5.0\ref\SharpExoplanetHermitsOfTheGalaxy.dll
 C:\Users\vtsuk\OneDrive\Рабочий стол\Proj - C#\ConsoleGames\SharpExoplanetHermitsOfTheGalaxy\SharpExoplanetHermitsOfTheGalaxy\obj\Debug\net5.0\SharpExoplanetHermitsOfTheGalaxy.pdb
 C:\Users\vtsuk\OneDrive\Рабочий стол\Proj - C#\ConsoleGames\SharpExoplanetHermitsOfTheGalaxy\SharpExoplanetHermitsOfTheGalaxy\obj\Debug\net5.0\SharpExoplanetHermitsOfTheGalaxy.genruntimeconfig.cache
+C:\Users\vtsuk\OneDrive\Рабочий стол\Proj - C#\ConsoleGames\SharpExoplanetHermitsOfTheGalaxy\SharpExoplanetHermitsOfTheGalaxy\obj\Debug\net5.0\SharpExoplanetHermitsOfTheGalaxy.csproj.AssemblyReference.cache
