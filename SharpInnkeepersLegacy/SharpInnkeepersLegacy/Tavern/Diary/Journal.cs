@@ -36,7 +36,6 @@ namespace SharpInnkeepersLegacy
                 Console.WriteLine("Инвентарь персонажа.");
                 Inventory inventory = new Inventory();                  // Инвентарь персонажа
                 inventory.DisplayInventory();
-
                 Console.ReadLine();
                 journal();
                
@@ -52,14 +51,14 @@ namespace SharpInnkeepersLegacy
             }
             else if (option == 5)
             {
-                Console.WriteLine("Сдесь вы можите выбрать задания которые вам оставили поситители.");
-                Tasks();                                                // Задания
+                Console.WriteLine("Сдесь вы можите выбрать задания которые вам оставили в почтовом ящике.");
+                MailboxTasks();                                          // Задания
                 Console.ReadLine();
             }
         }
 
        
-        private static void Tasks()
+        private static void MailboxTasks()
         {
             Console.WriteLine("1. Вернуться в журнал");
             Console.WriteLine("2. ");

@@ -19,26 +19,28 @@ namespace SharpPredator
             {
                 Console.Clear();
 
-                Console.WriteLine("1. Мы попадаем в статусы:");
-                Console.WriteLine("2. Мы попадаем в карты:");
-                Console.WriteLine("3. Мы попадаем в магазин:");
-                Console.WriteLine("Используйте стрелки для перемещения по карте или нажмите 'Q' для выхода:");
+                Console.WriteLine("1. Мои статусы:");
+                Console.WriteLine("2. Моя карта:");
+                Console.WriteLine("3. Мой магазин:");
+                int option = getIntInRange(3);
 
-                if (roomNumber == 1) game.DisplayStats();
-                if (roomNumber == 2) game.DisplayMap();
-                if (roomNumber == 3) game.EnterShop();
-
-                Console.Clear();
-               
-
-                var key = Console.ReadKey().Key;
-
-                if (key == ConsoleKey.Q)
+                if (option == 1)
                 {
-                    break;
+                    game.DisplayStats();
+                    Console.WriteLine();
+                }
+                else if (option == 2)
+                {
+                    game.DisplayMap();
+                    Console.WriteLine();
+                }
+                else
+                {
+                    game.EnterShop();
+                    Console.WriteLine();
                 }
 
-                game.MovePlayer(key);
+                // game.MovePlayer(key);
 
                 // Дополнительный сюжет
 
@@ -63,9 +65,6 @@ namespace SharpPredator
                 // Выводите информацию о текущем состоянии игры и продолжайте цикл
 
             }
-
-            Console.WriteLine("Спасибо за игру!");
-
         }
 
         public static void Introduction()
