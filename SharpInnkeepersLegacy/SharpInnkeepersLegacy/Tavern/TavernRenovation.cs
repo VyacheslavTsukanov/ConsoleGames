@@ -61,6 +61,7 @@ namespace SharpInnkeepersLegacy
             Console.WriteLine("3. Отремонтировать мебель");
             Console.WriteLine("4. Отремонтировать гриль");
             Console.WriteLine("5. Отремонтировать барную стойку");
+            Console.WriteLine("6. Текущее количество Очков лояльности");
 
             Console.Write("Введите число: ");
             int choice = int.Parse(Console.ReadLine());
@@ -68,18 +69,21 @@ namespace SharpInnkeepersLegacy
             switch (choice)
             {
                 case 1:
-                    tavern.RepairKitchen();
+                    PlaySister.playForYourSister();
                     break;
                 case 2:
-                    tavern.RepairFurniture();
+                    tavern.RepairKitchen();
                     break;
                 case 3:
-                    tavern.RepairGrill();
+                    tavern.RepairFurniture();
                     break;
                 case 4:
-                    tavern.RepairBarCounter();
+                    tavern.RepairGrill();
                     break;
                 case 5:
+                    tavern.RepairBarCounter();
+                    break;
+                case 6:
                     Console.WriteLine($"Текущее количество Очков лояльности: {tavern.LoyaltyPoints}");
                     tavernRenovation();
                     Console.WriteLine("");

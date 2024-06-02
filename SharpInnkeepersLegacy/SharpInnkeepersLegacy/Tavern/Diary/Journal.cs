@@ -42,9 +42,9 @@ namespace SharpInnkeepersLegacy
             }
             else if (option == 4)
             {
-                Console.WriteLine("Очки лояльности.");
-                //LoyaltyPoints loyaltyPoints = new LoyaltyPoints();      // Очки лояльности
-                //loyaltyPoints.LoyaltyPoints();
+                Console.WriteLine("Очки лояльности.\n");
+                LoyaltyPoints loyaltyPoints = new LoyaltyPoints();      // Очки лояльности
+                loyaltyPoints.DisplayStats();
                 journal();                                              // Вернуться назад
                 Console.ReadLine();
             }

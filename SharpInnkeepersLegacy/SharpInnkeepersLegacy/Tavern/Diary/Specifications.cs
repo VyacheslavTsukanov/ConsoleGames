@@ -24,6 +24,7 @@ namespace SharpInnkeepersLegacy
         private Character player;
 
         public Specifications()
+                                
         {
             player = new Character(100, 50, 10);
         }
