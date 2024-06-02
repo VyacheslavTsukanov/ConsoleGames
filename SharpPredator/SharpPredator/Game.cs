@@ -36,6 +36,7 @@ namespace SharpPredator
                 Console.WriteLine("- " + item);
             }
             Console.ResetColor();
+            Console.ReadKey();
         }
 
         public void DisplayMap()
@@ -43,6 +44,7 @@ namespace SharpPredator
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("Вы находитесь в: " + maps[playerPosition]);
             Console.ResetColor();
+            Console.ReadKey();
         }
 
         public void MovePlayer(ConsoleKey key)
@@ -105,10 +107,12 @@ namespace SharpPredator
                 player.Money -= item.Price;
                 player.Inventory.Add(item.Name);
                 Console.WriteLine("Вы купили: " + item.Name);
+                Console.ReadKey();
             }
             else
             {
                 Console.WriteLine("Недостаточно денег!");
+                Console.ReadKey();
             }
         }
 
@@ -125,6 +129,7 @@ namespace SharpPredator
             }
 
             Console.ResetColor();
+            Console.ReadKey();
         }
     }
 }
