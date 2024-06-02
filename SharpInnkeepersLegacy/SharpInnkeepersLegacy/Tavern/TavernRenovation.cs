@@ -17,32 +17,29 @@ namespace SharpInnkeepersLegacy
 
             public void RepairKitchen()
             {
-                Console.WriteLine("Кухня отремонтирована.");
+                Console.WriteLine("Кухня отремонтирована.\n");
                 LoyaltyPoints += 10;
-                Console.WriteLine("");
                 tavernRenovation();
             }
 
             public void RepairFurniture()
             {
-                Console.WriteLine("Мебель отремонтирована.");
+                Console.WriteLine("Мебель отремонтирована.\n");
                 LoyaltyPoints += 15;
                 tavernRenovation();
             }
 
             public void RepairGrill()
             {
-                Console.WriteLine("Гриль отремонтирован.");
+                Console.WriteLine("Гриль отремонтирован.\n");
                 LoyaltyPoints += 5;
-                Console.WriteLine("");
                 tavernRenovation();
             }
 
             public void RepairBarCounter()
             {
-                Console.WriteLine("Барная стойка отремонтирована.");
+                Console.WriteLine("Барная стойка отремонтирована.\n");
                 LoyaltyPoints += 20;
-                Console.WriteLine("");
                 tavernRenovation();
             }
         }
@@ -50,7 +47,7 @@ namespace SharpInnkeepersLegacy
         public static void tavernRenovation() // Ремонт таверны
         {
             Tavern tavern = new Tavern();
-
+            
             Console.WriteLine("Таверна в плачевном состоянии. Дедушка следил за ней как мог, а нас не было рядом когда ему нужна была помощь." +
                 "Чтож, пришла и моя очедь следить за ней. С чего же начать?");
             Console.WriteLine("Чем лучше у вас товерна, чем больше у вас Очки лояльности");

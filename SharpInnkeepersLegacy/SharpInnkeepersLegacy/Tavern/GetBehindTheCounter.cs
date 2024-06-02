@@ -8,6 +8,7 @@ namespace SharpInnkeepersLegacy
     class GetBehindTheCounter
     {
         // kitchenDrawing, furnitureDrawing, drawingGrills, barCounterDrawing
+        // string kD, fD, dG, bCD;
         static bool kitchenDrawing = false;
         static bool furnitureDrawing = false;
         static bool drawingGrills = false;
@@ -36,8 +37,8 @@ namespace SharpInnkeepersLegacy
             else if (option == 2)
             {
                 Console.WriteLine("Ты наливаешь пиво.");
-                GetBehindTheCounter.getBehindTheCounter();
                 Console.ReadLine();
+                GetBehindTheCounter.getBehindTheCounter();
             }
             else if (option == 3)
             {
@@ -55,7 +56,6 @@ namespace SharpInnkeepersLegacy
 
         public static void GuesTheRiddle()
         {
-            string kD, fD, dG, bCD;
             string[] names = { "Мерлин", "Эльф", "Ведьма", "Король", "Пират" };
             string[] riddles = {
             "Что такое, если убрать всю воду, и останется только земля?",
